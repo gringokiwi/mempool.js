@@ -57,5 +57,5 @@ export interface TxLiquidInstance {
     vout: number;
   }) => Promise<TxOutspend>;
   getTxOutspends: (params: { txid: string }) => Promise<Array<TxOutspend>>;
-  postTx: (params: { txhex: string }) => Promise<unknown>;
+	postTx: (params: { txhex: string }) => Promise<string>;
 }
