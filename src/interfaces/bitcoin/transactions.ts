@@ -5,7 +5,7 @@ export interface Tx {
   vin: {
     txid: string;
     vout: number;
-    prevout: Vout;
+		prevout: Vout | null;
     scriptsig: string;
     scriptsig_asm: string;
     is_coinbase: boolean;
